@@ -1,0 +1,23 @@
+{
+  "name": "tpi-fase3",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "install:backend":"cd backend && npm install",
+    "install:frontend":"cd frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "npm run install:backend && install:frontend && cd frontend && npm run build",
+    "Lint": "concurrently \"cd backend && npm run Lint\" \"cd frontend && npm run Lint\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces":[
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
