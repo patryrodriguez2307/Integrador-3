@@ -17,28 +17,20 @@
   ],
   "routes": [
     {
-<<<<<<< HEAD
-=======
       "src": "/api/public/(.*)",
       "dest": "backend/public/$1"
     },
     {
->>>>>>> f6c0033f1cb1ebe077bf3ab2eaa970b2b124fbef
       "src": "/api/(.*)",
       "dest": "backend/src/app.js"
     },
     {
-<<<<<<< HEAD
-      "src": "/(.*)",
-      "dest": "frontend/$1"
-=======
       "src": "/(.*\\.(js|css|ico|png|jpg|jpeg|ttf|svg))",
       "dest": "frontend/$1"
     },
     {
       "src": "/(.*)",
       "dest": "frontend/index.html"
->>>>>>> f6c0033f1cb1ebe077bf3ab2eaa970b2b124fbef
     }
   ]
 }
