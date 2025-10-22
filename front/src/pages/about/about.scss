@@ -1,0 +1,11 @@
+@use "@/scss/variables" as var;
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    gap: var.$spacing-sm;
+    padding: var.$spacing-md;
+    margin-left: var.$spacing-xl;
+}

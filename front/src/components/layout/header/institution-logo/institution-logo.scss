@@ -1,0 +1,39 @@
+@use "@/scss/variables" as var;
+
+.institution-logo {
+    display: flex;
+    align-items: center;
+    gap: var.$spacing-sm;
+
+    .Anita {
+        width: 200px;
+        height: 250px;
+        float: left center;
+        padding-right: 2rem;
+        border-radius: 8px;
+    }
+
+    &__logo {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 5px 10px 20px rgba(248, 116, 197, 0.705);
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        font-family: cursive;
+        width: 500px;
+        height: 200px;
+        align-items: center;
+        margin-left: 1rem;
+        color: blueviolet;
+        font-size: var.$font-size-xxl;
+        font-weight: var.$font-weight-bold;
+        text-transform: uppercase;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.75);
+
+    }
+
+}

@@ -1,0 +1,14 @@
+@use "@/scss/variables" as var;
+
+.footer-legal-item {
+    &__label {
+
+        font-size: var.$font-size-sm;
+        font-weight: var.$font-weight-regular;
+        color: var.$color-primary-800;
+
+        &:hover {
+            color: var.$color-neutro-300;
+        }
+    }
+}

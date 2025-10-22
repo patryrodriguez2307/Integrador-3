@@ -1,0 +1,45 @@
+@use "@/scss/variables" as var;
+
+.vision {
+    width: 90%;
+    justify-content: center;
+    border: 2px solid rgb(233, 85, 213);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 4);
+
+    &__title {
+        color: var.$color-neutro-700;
+        font-size: var.$font-size-lg;
+        font-weight: var.$font-weight-bold;
+        padding-left: var.$spacing-sm;
+        padding-top: var.$spacing-sm;
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        place-items: center;
+
+
+    }
+
+    &__description {
+        color: var.$color-neutro-700;
+        font-size: var.$font-size-md;
+        font-weight: var.$font-weight-regular;
+        text-align: justify;
+        padding: 0 var.$spacing-sm;
+        margin-left: var.$spacing-lg;
+        margin-top: var.$spacing-xxl;
+    }
+
+    &__image {
+        border-radius: 15%;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 4);
+        height: 300px;
+        width: 200px;
+        float: right;
+        margin: 0 0 var.$spacing-md var.$spacing-sm;
+
+    }
+}

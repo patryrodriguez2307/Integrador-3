@@ -1,0 +1,11 @@
+@use "@/scss/variables" as var;
+
+.product-search {
+    display: flex;
+    gap: var.$spacing-sm;
+
+    .searcher {
+        background-color: var.$color-neutro-300;
+        border-radius: 8px;
+    }
+}

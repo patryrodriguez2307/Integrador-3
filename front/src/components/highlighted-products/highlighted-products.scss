@@ -1,0 +1,63 @@
+@use "@/scss/variables" as var;
+
+.highlighted-products__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var.$spacing-lg;
+    padding: var.$spacing-lg;
+
+
+    .highlighted-products__title {
+        font-family: cursive;
+        font-size: 4rem;
+        color: blueviolet;
+
+    }
+
+    .highlighted-products__space {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100vw;
+
+    }
+
+    .highlighted-products__item {
+        position: relative;
+        margin: 10px;
+        gap: 5px;
+    }
+
+    img {
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 8px;
+
+
+    }
+
+
+    .product-name-btn {
+        position: absolute;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 5px 10px;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.2);
+
+        }
+
+    }
+
+
+}

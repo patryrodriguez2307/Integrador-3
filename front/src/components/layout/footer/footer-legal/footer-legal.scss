@@ -1,0 +1,18 @@
+@use "@/scss/variables" as var;
+
+.footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: var.$spacing-xs;
+
+    &__title {
+        color: var.$color-primary-800;
+        font-size: var.$font-size-sm;
+        font-weight: var.$font-weight-bold;
+
+    }
+
+    &__content {
+        padding-left: var.$spacing-xs;
+    }
+}
