@@ -1,5 +1,5 @@
 import { Router } from "express";
-import inquiryController from "../controllers/inquiry.controller.js";
+import InquiryController from "../controllers/inquiry.controller.js";
 
 const router = Router();
 const inquiryController = new InquiryController();
