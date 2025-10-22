@@ -3,7 +3,7 @@ import ErrorService from "./error.service.js";
 
 export default class InquiryService {
     async sendInquiry(Data) {
-        const { name, surname, phone, email, inquiry } = inquiryData;
+        const { name, surname, phone, email, inquiry } = Data;
 
         const from = `"${name} ${surname}" <${process.env.SMTP_RECIPIENT}>`;
         const to = process.env.SMTP_RECIPIENT;
